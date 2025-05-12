@@ -11,8 +11,8 @@ public class ConversorMoedas {
             System.out.println("2) Peso argentino => Dólar");
             System.out.println("3) Dólar => Real brasileiro");
             System.out.println("4) Real brasileiro => Dólar");
-            System.out.println("5) Dólar => Euro");
-            System.out.println("6) Euro => Dólar");
+            System.out.println("5) Dólar => Peso colombiano");
+            System.out.println("6) Peso colombiano => Dólar");
             System.out.println("7) Sair");
             System.out.print("\nEscolha uma opção: ");
 
@@ -28,8 +28,8 @@ public class ConversorMoedas {
                 case 2 -> { de = "ARS"; para = "USD"; }
                 case 3 -> { de = "USD"; para = "BRL"; }
                 case 4 -> { de = "BRL"; para = "USD"; }
-                case 5 -> { de = "USD"; para = "EUR"; }
-                case 6 -> { de = "EUR"; para = "USD"; }
+                case 5 -> { de = "USD"; para = "COP"; }
+                case 6 -> { de = "COP"; para = "USD"; }
             }
 
             double valor = AssistenteInput.lerDoublePositivo(scanner, "\nDigite o valor que deseja converter: ");

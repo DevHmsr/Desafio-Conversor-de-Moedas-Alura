@@ -5,7 +5,7 @@ import java.net.URL;
 import java.util.OptionalDouble;
 
 public class ApiExchangeRate {
-    private static final String API_KEY = "6728244f3d6232ef039e8154";
+    private static final String API_KEY = System.getenv("6728244f3d6232ef039e8154");
 
     public static OptionalDouble buscarTaxa(String de, String para) {
         try {

@@ -6,7 +6,7 @@ Além disso, ele também registra todas as conversões realizadas em arquivos de
 
 ## 🟢 Funcionalidades
 
-- Conversão entre diferentes moedas: Dólar, Peso Argentino, Real Brasileiro e Euro.
+- Conversão entre diferentes moedas: Dólar, Peso Argentino, Real Brasileiro e Peso colombiano.
 - Utilização de taxas de câmbio em tempo real, obtidas de uma API externa.
 - Armazenamento das conversões realizadas em arquivos JSON, dentro da pasta `logs`.
 - Organização dos logs com timestamps únicos para cada conversão.
@@ -49,9 +49,9 @@ java ConversorMoedas
 
 4) Real Brasileiro => Dólar
 
-5) Dólar => Euro
+5) Dólar => Peso colombiano
 
-6) Euro => Dólar
+6) Peso colombiano => Dólar
 
 ## ⚙ Estrutura de Arquivos
 

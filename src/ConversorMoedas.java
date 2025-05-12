@@ -67,7 +67,7 @@ public class ConversorMoedas {
     private static void salvarJsonEmArquivo(String conteudoJson) {
         try (FileWriter writer = new FileWriter("conversoes.jsonl", true)) {
             writer.write(conteudoJson + System.lineSeparator());
-            System.out.println("Resultado salvo em " + "conversoes.jsonl");
+            System.out.println("Resultado salvo no arquivo " + "conversoes.jsonl");
         } catch (IOException e) {
             System.out.println("Erro ao salvar o arquivo: " + e.getMessage());
         }

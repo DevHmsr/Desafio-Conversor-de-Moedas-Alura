@@ -60,7 +60,6 @@ public class ConversorMoedas {
             return;
         }
 
-        // Ordena os arquivos do mais recente para o mais antigo
         Arrays.sort(arquivos, Comparator.comparingLong(File::lastModified).reversed());
 
         Gson gson = new Gson();
@@ -75,9 +74,9 @@ public class ConversorMoedas {
 
                 CriarJson conversao = gson.fromJson(conteudo.toString(), CriarJson.class);
 
-                // Exibição em formato textual amigável
                 System.out.printf(
-                        "%.2f %s => %.2f %s (Taxa: %.4f)%n",
+                        "[%s] %8.2f %-4s => %10.2f %-4s (Taxa: %.4f)%n",
+                        conversao.getDataHora(),
                         conversao.getValorOriginal(),
                         conversao.getMoedaOrigem(),
                         conversao.getValorConvertido(),
@@ -97,7 +96,4 @@ public class ConversorMoedas {
             System.out.println("Nenhuma conversão registrada nos arquivos.");
         }
     }
-
-
-
 }

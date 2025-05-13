@@ -27,7 +27,7 @@ public class ServicoConversao {
     private static void salvarJsonEmArquivo(String conteudoJson) {
         String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
         String nomeDiretorio = "logs";
-        String nomeArquivo = nomeDiretorio + "/conversao_" + timestamp + ".jsonl";
+        String nomeArquivo = nomeDiretorio + "/conversao_" + timestamp + ".json";
 
         try {
             new File(nomeDiretorio).mkdirs();

@@ -5,6 +5,27 @@ public class CriarJson {
     private double valorOriginal;
     private String moedaOrigem;
     private String moedaDestino;
+
+    public double getValorOriginal() {
+        return valorOriginal;
+    }
+
+    public String getMoedaOrigem() {
+        return moedaOrigem;
+    }
+
+    public String getMoedaDestino() {
+        return moedaDestino;
+    }
+
+    public double getTaxa() {
+        return taxa;
+    }
+
+    public double getValorConvertido() {
+        return valorConvertido;
+    }
+
     private double taxa;
     private double valorConvertido;
 

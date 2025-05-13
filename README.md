@@ -1,4 +1,4 @@
-# Conversor de Moedas By Dev [Heitormsr](https://github.com/DevHmsr) 👨‍💻
+# Conversor de Moedas em Java (por [@DevHmsr](https://github.com/DevHmsr)) 💱
 
 Este é um programa simples em Java que permite realizar conversões de diferentes moedas utilizando taxas de câmbio em tempo real. O programa oferece uma interface no terminal para que o usuário possa escolher entre diferentes opções de conversão e visualizar o valor convertido.
 
@@ -6,8 +6,8 @@ Além disso, ele também registra todas as conversões realizadas em arquivos de
 
 ## 🟢 Funcionalidades
 
-- Conversão entre diferentes moedas: Dólar, Peso Argentino, Real Brasileiro e Peso colombiano.
-- Utilização de taxas de câmbio em tempo real, obtidas de uma API externa.
+- Conversão entre diferentes moedas: Dólar, Peso Argentino, Real Brasileiro e Peso Colombiano.
+- Utilização de taxas de câmbio em tempo real, obtidas da API [ExchangeRate](https://www.exchangerate-api.com).
 - Armazenamento das conversões realizadas em arquivos JSON, dentro da pasta `logs`.
 - Organização dos logs com timestamps únicos para cada conversão.
 
@@ -18,7 +18,12 @@ Além disso, ele também registra todas as conversões realizadas em arquivos de
 
 ## ✅ Instalação
 
-1. Clone o repositório clicando [aqui](https://github.com/DevHmsr/Desafio-Conversor-de-Moedas-Alura).
+1. Clone o repositório:
+```bash
+git clone https://github.com/DevHmsr/Desafio-Conversor-de-Moedas-Alura.git
+cd Desafio-Conversor-de-Moedas-Alura
+```
+
 2. Abra o projeto em seu ambiente de desenvolvimento preferido (ex.: IntelliJ, VS Code, etc.) ou utilize a linha de comando.
 3. Compile o código: 
 ```
@@ -49,9 +54,9 @@ java ConversorMoedas
 
 4) Real Brasileiro => Dólar
 
-5) Dólar => Peso colombiano
+5) Dólar => Peso Colombiano
 
-6) Peso colombiano => Dólar
+6) Peso Colombiano => Dólar
 
 ## ⚙ Estrutura de Arquivos
 

@@ -17,7 +17,7 @@ public class CriarJson {
         this.moedaDestino = moedaDestino;
         this.taxa = taxa;
         this.valorConvertido = valorConvertido;
-        this.dataHora = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        this.dataHora = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"));
     }
 
     public String toJson() {
@@ -25,7 +25,6 @@ public class CriarJson {
         return gson.toJson(this);
     }
 
-    // Getters
     public double getValorOriginal() {
         return valorOriginal;
     }

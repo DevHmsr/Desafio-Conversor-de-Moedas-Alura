@@ -1,4 +1,4 @@
-# Conversor de Moedas em Java (por [@DevHmsr](https://github.com/DevHmsr)) 💱
+# 💱 Conversor de Moedas em Java (por [@DevHmsr](https://github.com/DevHmsr)) 
 
 Este é um programa simples em Java que permite realizar conversões de diferentes moedas utilizando taxas de câmbio em tempo real. O programa oferece uma interface no terminal para que o usuário possa escolher entre diferentes opções de conversão e visualizar o valor convertido.
 
@@ -28,21 +28,39 @@ cd Desafio-Conversor-de-Moedas-Alura
 ```
 2. Certifique-se de que o Java 8 (ou superior) está instalado e configurado em seu sistema.
   
-3. Crie a pasta logs, caso ela ainda não exista:
+3. Abra o terminal da sua IDE e crie a pasta `logs`, caso ela ainda não exista:
 ```
 mkdir logs
 ```
-4. Baixe a biblioteca [Gson](https://github.com/google/gson) (caso não use Maven/Gradle) e coloque o .jar no classpath.
-   
-5. Abra o projeto em seu ambiente de desenvolvimento preferido (ex.: IntelliJ, VS Code, etc.).
-   
-6. Compile o código: 
+4. Crie também a pasta `lib`:
 ```
-javac -cp ".:gson-2.8.9.jar" ConversorMoedas.java AssistenteInput.java ServicoConversao.java ApiTaxaConversao.java CriarJson.java MoedaResponse.java
+mkdir lib
 ```
-7. Execute o programa:
+5. Baixe a biblioteca [Gson](https://github.com/google/gson) (caso não use Maven/Gradle) e coloque, manualmente, o arquivo .jar dentro da pasta `lib` (por exemplo: lib/gson-2.8.9.jar).
+
+6. Crie também a pasta `bin`, onde os arquivos .class serão gerados:
 ```
-java -cp ".:gson-2.8.9.jar" ConversorMoedas
+mkdir bin
+```  
+7. Compile todos os arquivos Java com o seguinte comando: 
+
+💻 No Windows:
+```
+javac -cp "lib/gson-2.8.9.jar" -d bin src/*.java
+```
+💻 No Linux/macOS:
+```
+javac -cp "lib/gson-2.8.9.jar" -d bin src/*.java
+```
+8. Execute o programa:
+
+▶️ No Windows:
+```
+java -cp "bin;lib/gson-2.8.9.jar" ConversorMoedas
+```
+▶️ No Linux/macOS:
+```
+java -cp "bin:lib/gson-2.8.9.jar" ConversorMoedas
 ```
 ## ⚙ Estrutura de Arquivos
 
